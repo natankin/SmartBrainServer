@@ -22,7 +22,7 @@ const app=express();
 app.use(cors());
 app.use(express.json())
 
-app.get('/',(req,res)=>{res.send(database.user)})
+app.get('/',(req,res)=>{res.send("it is WORKING")})
 app.post('/signIn',(req,res)=>{handleSignIn(req,res,db,bcrypt)})
 app.post('/register',(req,res)=>{handleRegister(req,res,db,bcrypt)})
 app.get('/profile/:id',(req,res)=>{handleProfile(req,res,db)})
