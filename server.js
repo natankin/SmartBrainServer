@@ -30,4 +30,4 @@ app.put('/image',(req,res)=>{handleImage(req,res,db)})
 app.post('/imageURL',(req,res)=>{handleApiCall(req,res)})
 
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
