@@ -10,7 +10,7 @@ import { handleImage, handleApiCall} from "./Controlers/image.js";
 const db=knex({
     client: 'pg',
     connection: {
-      connectionString : '127.0.0.1',
+      connectionString : process.env.DATABASE_URL,
       ssl:true,
     }
   });
